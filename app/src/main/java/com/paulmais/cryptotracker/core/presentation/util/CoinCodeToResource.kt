@@ -1,4 +1,4 @@
-package com.paulmais.cryptotracker.util
+package com.paulmais.cryptotracker.core.presentation.util
 
 import com.paulmais.cryptotracker.R
 

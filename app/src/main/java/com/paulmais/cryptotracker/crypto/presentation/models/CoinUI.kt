@@ -3,7 +3,7 @@ package com.paulmais.cryptotracker.crypto.presentation.models
 import android.icu.text.NumberFormat
 import androidx.annotation.DrawableRes
 import com.paulmais.cryptotracker.crypto.domain.Coin
-import com.paulmais.cryptotracker.util.getDrawableIdForCoin
+import com.paulmais.cryptotracker.core.presentation.util.getDrawableIdForCoin
 import java.util.Locale
 
 data class CoinUI(

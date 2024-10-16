@@ -1,4 +1,4 @@
-package com.paulmais.cryptotracker.util
+package com.paulmais.cryptotracker.core.domain.util
 
 typealias DomainError = Error
 
