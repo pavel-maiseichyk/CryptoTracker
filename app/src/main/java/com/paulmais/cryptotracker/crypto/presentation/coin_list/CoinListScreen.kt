@@ -13,13 +13,13 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.unit.dp
-import com.paulmais.cryptotracker.crypto.domain.Coin
 import com.paulmais.cryptotracker.crypto.presentation.coin_list.components.CoinListItem
 import com.paulmais.cryptotracker.crypto.presentation.coin_list.components.previewCoin
 import com.paulmais.cryptotracker.ui.theme.CryptoTrackerTheme
+import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.emptyFlow
 
 @Composable
 fun CoinListScreen(
