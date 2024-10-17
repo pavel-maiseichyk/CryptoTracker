@@ -24,6 +24,7 @@ import kotlinx.coroutines.flow.emptyFlow
 @Composable
 fun CoinListScreen(
     state: CoinListState,
+    onAction: (CoinListAction) -> Unit,
     modifier: Modifier = Modifier
 ) {
     if (state.isLoading) {
@@ -43,7 +44,7 @@ fun CoinListScreen(
             items(state.coins) { coinUI ->
                 CoinListItem(
                     coinUI = coinUI,
-                    onClick = {},
+                    onClick = { onAction(CoinListAction.OnCoinClick(coinUI)) },
                     modifier = Modifier.fillMaxWidth()
                 )
                 HorizontalDivider()
@@ -60,7 +61,8 @@ private fun CoinListScreenPreview() {
             state = CoinListState(
                 coins = (1..100).map { previewCoin.copy(id = it.toString()) }
             ),
-            modifier = Modifier.background(MaterialTheme.colorScheme.background)
+            modifier = Modifier.background(MaterialTheme.colorScheme.background),
+            onAction = {}
         )
     }
 }
